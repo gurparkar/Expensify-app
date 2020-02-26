@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "serve": "live-server public/",
+    "start": "node server/server.js",
     "build": "webpack",
     "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json",
-    "build-produ": "webpack -p --env production"
+    "build-produ": "webpack -p --env production",
+    "heroku-postbuild": "npm run build-produ"
   },
   "author": "",
   "license": "ISC",
@@ -32,6 +34,7 @@
     "babel-loader": "^8.0.0-beta.0",
     "bootstrap": "^4.4.1",
     "css-loader": "^3.4.2",
+    "express": "^4.17.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "jest-enzyme": "^7.1.2",
     "live-server": "^1.2.1",
