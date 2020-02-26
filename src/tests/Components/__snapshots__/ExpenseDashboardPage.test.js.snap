@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the ExpenseList Component using Jest and Enzyme 1`] = `
+<div>
+  <Connect(ExpenseListFilters) />
+  This is from my dashboard component
+  <Connect(ExpenseList) />
+</div>
+`;

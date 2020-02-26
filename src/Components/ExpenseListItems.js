@@ -2,7 +2,7 @@ import React from 'react'
 //import { connect } from 'react-redux'
 
 import { Link } from 'react-router-dom'
-const ExpenseListItems = ({ id,description, amount, createdAt}) => {
+export const ExpenseListItems = ({ id,description, amount, createdAt}) => {
     
     return(
     <div>
