@@ -9,6 +9,7 @@ import {setTextFilter, sortByAmount} from './actions/filters'
 import getVisibleExpenses from './selectors/expenses'
 import  {BrowserRouter, Route, Switch, Link, NavLink} from  'react-router-dom'
 import  AppRouter from './routers/AppRouter'
+import './firebase/firebase'
 
 const store = configureStore()
 

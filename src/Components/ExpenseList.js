@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import ExpenseListItems from './ExpenseListItems'
 import SelectExpenses from '../selectors/expenses'
+import uuid from 'uuid'
 
 
 export const ExpenseList = (props) => {
@@ -10,7 +11,7 @@ export const ExpenseList = (props) => {
              { props.expenses.length == 0 ? 
                 <p>No expenses</p>: 
                 props.expenses.map((expense) => {
-                    return <ExpenseListItems key = {expense.id} {...expense} />
+                    return <ExpenseListItems key = {uuid()} {...expense} />
               })
 
             }
